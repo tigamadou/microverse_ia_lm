@@ -4,78 +4,115 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
 
-    <h1 id="title">Survey Form</h1>
 
-    <p id="description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-       Duis aute irure dolor in reprehenderit in voluptate velit
-       esse cillum dolore eu fugiat nulla pariatur.
-       Excepteur sint occaecat cupidatat non proident, sunt
-       in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <form id="survey-form">
-      <p>
-        <label for="name" id="name-label">Your Name</label>
-        <input required="" type="text" name="name" id="name" placeholder="Your name">
-      </p>
-      <p>
-        <label for="email" id="email-label">Your Email</label>
-        <input required="" type="email" name="email" id="email" placeholder="Your email">
-      </p>
-      <p>
-        <label for="number" id="number-label">Your Number</label>
-        <input required="" type="number" name="number" id="number" min="10" max="50" value="10" placeholder="Your number">
-      </p>
-      <p>
-        <label for="dropdown">Gender</label>
-        <select id="dropdown">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-      </p>
-      <p>
-        <label for="">Do you like Microverse Program</label>
-        <div class="">
-          <input type="radio" name="like" value="yes" id="yes">
-          <label for="yes">Yes</label>
-          <input type="radio" name="like" value="no" id="no">
-          <label for="no">No</label>
+      <form id="survey-form">
+        <p id="description">
+          Tell us a bit more about you.
+        </p>
+        <div class="field">
+          <div class="field-element">
+            <label for="name" id="name-label">Your Name</label>
+          </div>
+          <div class="field-element">
+            <input required="" type="text" name="name" id="name" placeholder="Your name">
+          </div>
         </div>
-      </p>
-      <p>
-        <label for="">How likely are you going to recommend the program to your friends</label>
-        <div class="">
-          <input type="radio" name="likely" value="very-likel" id="very-likely">
-          <label for="very-likely">Very likely</label>
-          <input type="radio" name="likely" value="not-likely" id="not-likely">
-          <label for="not-likely">Not Likely</label>
+        <div class="field">
+          <div class="field-element">
+            <label for="email" id="email-label">Your Email</label>
+          </div>
+          <div class="field-element">
+            <input required="" type="email" name="email" id="email" placeholder="Your email">
+          </div>
         </div>
-      </p>
-      <p>
-      <label for="">What do you think you are going to learn?</label>
-      <div class="">
-      <input type="checkbox" name="Python" value="python" id="python">
-      <label for="python">Python</label>
-      <input type="checkbox" name="PhP" value="php" id="php">
-      <label for="php">PhP</label>
-      </div>
-      </p>>
-      <p>
-      <textarea rows="5" cols="24" placeholder="In microverse we intend to push......"></textarea>
-      </p>
-      <p>
-        <input type="submit" name="" value="Submit" id="submit">
-      </p>
-    </form>
+        <div class="field">
+          <div class="field-element">
+            <label for="number" id="number-label">Your Number</label>
+          </div>
+          <div class="field-element">
+            <input required="" type="number" name="number" id="number" min="10" max="50" value="10" placeholder="Your number">
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-element">
+            <label for="dropdown">Gender</label>
+          </div>
+          <div class="field-element">
+            <select id="dropdown">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-element">
+            <label for="">Do you like Microverse Program</label>
+          </div>
+          <div class="field-element">
+            <input type="radio" name="like" value="yes" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="like" value="no" id="no">
+            <label for="no">No</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-element">
+              <label for="">How likely are you going to recommend the program to your friends</label>
+          </div>
+          <div class="field-element">
+            <input type="radio" name="likely" value="very-likel" id="very-likely">
+            <label for="very-likely">Very likely</label>
+            <input type="radio" name="likely" value="not-likely" id="not-likely">
+            <label for="not-likely">Not Likely</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-element">
+            <label for="">What do you think you are going to learn?</label>
+          </div>
+          <div class="field-element">
+            <input type="checkbox" name="Python" value="python" id="python">
+            <label for="python">Python</label>
+            <input type="checkbox" name="PhP" value="php" id="php">
+            <label for="php">PhP</label>
+            <input type="checkbox" name="javascript" value="javascript" id="javascript">
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" name="c#" value="c#" id="c#">
+            <label for="c#">C#</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-element">
+            <label for="">In microverse we intend to push......</label>
+          </div>
+          <div class="field-element">
+            <textarea rows="5" cols="24" placeholder="In microverse we intend to push......"></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-element">
+
+          </div>
+          <div class="field-element">
+            <input type="submit" name="" value="Submit" id="submit">
+            <input type="reset" name="" value="Cancel" id="cancel">
+          </div>
+        </div>
+
+
+
+      </form>
+
+    </div>
 
     <script  src="js/index.js"></script>
   </body>
