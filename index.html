@@ -25,16 +25,22 @@
     <form id="survey-form">
       <p>
         <label for="name" id="name-label">Your Name</label>
-        <input required="" type="text" name="name" id="name">
+        <input required="" type="text" name="name" id="name" placeholder="Your name">
       </p>
       <p>
         <label for="email" id="email-label">Your Email</label>
-        <input required="" type="email" name="email" id="email">
+        <input required="" type="email" name="email" id="email" placeholder="Your email">
       </p>
       <p>
         <label for="number" id="number-label">Your Number</label>
-        <input required="" type="number" name="number" id="number" min="10" max="50" value="10">
+        <input required="" type="number" name="number" id="number" min="10" max="50" value="10" placeholder="Your number">
       </p>
+      <p>
+        <select id="dropdown">
+        <option value="gender">Male</option>
+        <option value="gender">Female</option>
+      </select>
+      </p>>
     </form>
     <script  src="js/index.js"></script>
   </body>
